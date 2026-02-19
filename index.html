@@ -9,6 +9,8 @@
 
 <body>
     <script lang="javascript">
+        //variable with value
+
         let name = ["jhon", "doe", "smith","barath","shree","mani"];
         let ul = document.createElement("ul");
 
@@ -18,6 +20,17 @@
             ul.append(li1);
         }
         document.body.append(ul);
+
+
+        //variable without value
+
+        let username = prompt("enter name");
+        let ol = document.createElement("ol");
+        let li2 = document.createElement("li");
+        li2.textContent = username;
+        ol.append(li2);
+        document.body.append(ol);
+
     </script>
 </body>
 
