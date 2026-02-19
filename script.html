@@ -11,6 +11,9 @@
 
 
     <script lang="javascript">
+
+        //appendChild() method can only take one argument and append it to the end of the parent element
+
         let div = document.createElement("div");
         div.textContent = "Hello World";
         document.body.appendChild(div);
@@ -22,7 +25,12 @@
 
         document.body.appendChild(p);
 
+        let span = document.createElement("span");
+        span.textContent = "span tag";
+        document.body.appendChild(span);
+
         //ul-list
+        //append() method can take multiple arguments and append all of them at once
 
         let ul = document.createElement("ul");
 
@@ -42,10 +50,10 @@
         let li3 = document.createElement("li");
         li3.textContent = "li3";
 
-        let li4 = document.create.Element("li");
+        let li4 = document.createElement("li");
         li4.textContent = "li4";
 
-        ol.append("li3,li4");
+        ol.append(li3,li4);
         document.body.append(ol);
 
 
