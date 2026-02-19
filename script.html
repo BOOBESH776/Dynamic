@@ -22,9 +22,17 @@
 
         document.body.appendChild(p);
 
+        let ul = document.createElement("ul");
 
-        let 
+        let li1 = document.createElement("li");
+        li1.textContent = "li 1";
+
+        let li2 = document.createElement("li");
+        li2.textContent = "li 2";
+
+        ul.append(li1,li2);
+        document.body.append(ul);
+
     </script>
-
 </body>
 </html>
