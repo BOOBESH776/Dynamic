@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script lang="javascript">
+        let name = ["jhon", "doe", "smith","barath","shree","mani"];
+        let ul = document.createElement("ul");
+
+        for (let i = 0; i < name.length; i++) {
+            let li1 = document.createElement("li");
+            li1.textContent = name[i];
+            ul.append(li1);
+        }
+        document.body.append(ul);
+    </script>
+</body>
+
+</html>
