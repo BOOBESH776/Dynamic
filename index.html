@@ -11,7 +11,7 @@
     <script lang="javascript">
         //variable with value
 
-        let name = ["jhon", "doe", "smith","barath","shree","mani"];
+        let name = ["jhon", "doe", "smith", "barath", "shree", "mani"];
         let ul = document.createElement("ul");
 
         for (let i = 0; i < name.length; i++) {
@@ -24,12 +24,25 @@
 
         //variable without value
 
-        let username = prompt("enter name");
-        let ol = document.createElement("ol");
-        let li2 = document.createElement("li");
-        li2.textContent = username;
-        ol.append(li2);
-        document.body.append(ol);
+        // let username = prompt("enter name");
+        // let ol = document.createElement("ol");
+        // let li2 = document.createElement("li");
+        // li2.textContent = username;
+        // ol.append(li2);
+        // document.body.append(ol);
+
+
+        let username2 = prompt("enter name:");
+
+        if (username2) {
+            let ol2 = document.createElement("ol");
+            let li3 = document.createElement("li");
+            li3.textContent = username2;
+            ol2.append(li3);
+            document.body.append(ol2);
+        } else {
+            alert("please enter a name");
+        }
 
     </script>
 </body>
